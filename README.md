@@ -135,14 +135,5 @@ document.getElementById('input').addEventListener('keydown', (e)=>{
 <button onclick="translateWord()">Traduci!</button>
 <div class="result" id="result"></div>
 
-<script>
-function translateWord() {
-  const word = document.getElementById('wordInput').value.trim();
-  if(!word) { document.getElementById('result').innerText = "Scrivi qualcosa!"; return; }
-  const funnyWords = ["💥"+word+"💥", "😜"+word+"😜", word.split('').reverse().join('')+"🤪"];
-  const randomIndex = Math.floor(Math.random()*funnyWords.length);
-  document.getElementById('result').innerText = funnyWords[randomIndex];
-}
-</script>
-</body>
-</html>
+<body>
+<html>
